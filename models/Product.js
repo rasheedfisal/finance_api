@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import { loadType } from "mongoose-currency";
+const mongoose = require("mongoose");
+const { loadType } = require("mongoose-currency");
 
 const Schema = mongoose.Schema;
 loadType(mongoose);
@@ -28,4 +28,5 @@ const ProductSchema = new Schema(
 
 const Product = mongoose.model("Product", ProductSchema);
 
-export default Product;
+// export default Product;
+module.exports = Product;

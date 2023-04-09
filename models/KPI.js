@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import { loadType } from "mongoose-currency";
+const mongoose = require("mongoose");
+const { loadType } = require("mongoose-currency");
 
 const Schema = mongoose.Schema;
 loadType(mongoose);
@@ -81,4 +81,5 @@ const KPISchema = new Schema(
 
 const KPI = mongoose.model("KPI", KPISchema);
 
-export default KPI;
+// export default KPI;
+module.exports = KPI;

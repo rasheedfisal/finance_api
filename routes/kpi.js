@@ -1,5 +1,7 @@
-import express from "express";
-import KPI from "../models/KPI.js";
+// import express from "express";
+// import KPI from "../models/KPI.js";
+const express = require("express");
+const KPI = require("../models/KPI.js");
 
 const router = express.Router();
 
@@ -12,4 +14,5 @@ router.get("/kpis", async (req, res) => {
   }
 });
 
-export default router;
+// export default router;
+module.exports = router;
