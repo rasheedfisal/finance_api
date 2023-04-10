@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm install --force",
+  "installCommand": "npm install --legacy-peer-deps",
   "builds": [
     {
       "src": "app.js",
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/app.js"
+      "dest": "/"
     }
   ]
 }
